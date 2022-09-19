@@ -1,0 +1,40 @@
+body{
+    background-color: #1F1F1F;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: white;
+}
+h1{
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    background-color: coral;
+    border-radius: 15px;
+    color: #2B2B2B;
+    box-shadow: 5px 10px rgb(59, 59, 59);
+}
+.countries{
+    /* color: #264248; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 800px){
+    .countries{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    h1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
